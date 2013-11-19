@@ -6,7 +6,7 @@ inherit cross gst-plugins
 
 NAME="mingw64-i686-gstreamer0.10-plugins-base"
 VERSION=0.10.36
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="GStreamer 0.10 Base Plug-ins for Win32 toolchain"
 DESCRIPTION="GStreamer Base Plug-ins is a well-groomed and well-maintained
@@ -14,6 +14,8 @@ collection of GStreamer plug-ins and elements, spanning the range of possible
 types of elements one would want to write for GStreamer. It also contains
 helper libraries and base classes useful for writing elements. A wide range
 of video and audio decoders, encoders, and filters are included."
+
+CYGCONF_ARGS="--disable-static"
 
 src_install() {
 	cd ${B}
