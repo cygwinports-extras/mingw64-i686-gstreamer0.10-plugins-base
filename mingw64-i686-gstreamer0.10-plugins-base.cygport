@@ -1,12 +1,12 @@
 CROSS_HOST="i686-w64-mingw32"
-GST_PLUGINS_ENABLE="ogg pango theora vorbis"
-GST_PLUGINS_DISABLE="alsa gio gnome_vfs gst_v4l ivorbis libvisual x xvideo"
+GST_PLUGINS_ENABLE="gio ogg pango theora vorbis"
+GST_PLUGINS_DISABLE="alsa gnome_vfs gst_v4l ivorbis libvisual x xvideo"
 ORIG_PN="gst-plugins-base"
 inherit cross gst-plugins
 
 NAME="mingw64-i686-gstreamer0.10-plugins-base"
 VERSION=0.10.36
-RELEASE=2
+RELEASE=3
 CATEGORY="Devel"
 SUMMARY="GStreamer 0.10 Base Plug-ins for Win32 toolchain"
 DESCRIPTION="GStreamer Base Plug-ins is a well-groomed and well-maintained
